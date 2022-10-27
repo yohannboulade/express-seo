@@ -9,35 +9,73 @@
 	<!-- MATERIAL DESIGN ICONIC FONT -->
 	<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
 
+
+	<!-- Début de widget de lien Calendly -->
+	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+	<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
 	<!-- STYLE CSS -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-	
+
 	<div class="wrapper">
 		<div class="inner">
 			<h3>Demandez votre rapport mensuel</h3>
-			<div>
-				<!-- Début de widget en ligne Calendly -->
-				<div class="calendly-inline-widget" data-url="https://calendly.com/yohann-boulade/audit-express-seo" style="min-width:320px;height:630px;"></div>
-				<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-				<!-- Fin de widget en ligne Calendly -->
-			</div>
-			<h4>Le dérouler du rendez-vous</h4>
-			<ul>
-				<li>Présentation de votre projet</li>
-				<li>Impressions à chaud de votre site</li>
-				<li>Analyse de vos concurents</li>
-				<li>Analyse de vos mots clés</li>
-				<li>Analyse de vos backlink</li>
-				<li>Proposition commerciale personalisée</li>
-			</ul>
-			<h4>Après le rendez-vous</h4>
-			<p>Vous recevrez gratuitement et sans engagement par mail un rapport d'audit detaillé.</p>
+			<section>
+				<div>
+					<h4>Le dérouler du rendez-vous</h4>
+					<ul>
+						<li>Présentation de votre projet</li>
+						<li>Impressions à chaud de votre site</li>
+						<li>Analyse de vos concurents</li>
+						<li>Analyse de vos mots clés</li>
+						<li>Analyse de vos backlink</li>
+						<li>Proposition commerciale personalisée</li>
+					</ul>
+					<h4>Après le rendez-vous</h4>
+					<p>Vous recevrez gratuitement et sans engagement par mail un rapport d'audit detaillé.</p>
+				</div>
+				<div>
+					<form action="">
+						<label class="form-group">
+							<input type="text" class="form-control" required>
+							<span>Votre nom</span>
+							<span class="border"></span>
+						</label>
+						<label class="form-group">
+							<input type="text" class="form-control" required>
+							<span for="">Votre email</span>
+							<span class="border"></span>
+						</label>
+						<label class="form-group">
+							<input type="text" class="form-control" required>
+							<span for="">Votre url</span>
+							<span class="border"></span>
+						</label>
+						<label class="form-group">
+							<textarea name="" id="" class="form-control" required></textarea>
+							<span for="">Votre projet en quelque mots</span>
+							<span class="border"></span>
+						</label>
+						<section>
+							<button
+								onclick="Calendly.initPopupWidget({url: 'https://calendly.com/yohann-boulade/audit-express-seo'});return false;">
+								Rendez-vous téléphonique
+							</button>
+							<button>Envoyer
+								<i class="zmdi zmdi-arrow-right"></i>
+							</button>
+
+						</section>
+					</form>
+				</div>
+			</section>
 		</div>
 	</div>
 
 </body>
 <script src="js/contact.js"></script>
+
 </html>

@@ -49,6 +49,9 @@ ul {
   padding-left: 0;
   margin-bottom: 0;
 }
+ul li {
+  margin: 15px 0;
+}
 
 a:hover {
   text-decoration: none;
@@ -67,7 +70,7 @@ a:hover {
 }
 
 .inner {
-  max-width: 758px;
+  max-width: 1200px;
   margin: auto;
   background: #39459b;
   border: 10px solid #0d99d7;
@@ -151,7 +154,7 @@ textarea.form-control {
 
 button {
   border: none;
-  width: 162px;
+  width: 200px;
   height: 51px;
   border: 2px solid #fff;
   margin: auto;
@@ -200,6 +203,10 @@ button:hover:before {
 }
 button:hover i {
   transform: translateX(4px);
+}
+
+section {
+  display: flex;
 }
 
 @media (max-width: 767px) {
