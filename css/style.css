@@ -99,6 +99,7 @@ p {
   padding: 0 10px;
   margin-bottom: 55px;
   line-height: 1.8;
+  transition:1s;
 }
 
 .form-group {
